@@ -30,7 +30,7 @@ const fetchExchangeRate = async (baseUrl, fromCurrency, toCurrency) => {
     
     let response = await fetch(URL);
     if (!response.ok) {
-        throw new Error(`Failed to fetch from ${baseUrl}`);
+        throw new Error(`Failed to fetch API from ${baseUrl}`);
     }
     
     let data = await response.json();
